@@ -39,11 +39,13 @@ namespace Point
             {
                 if (walls.IsHitByFigure(snake))
                 {
+                    Console.Beep();
                     break;
                 }
                 
                 if(snake.Eat(food))
                 {
+                    Console.Beep();
                     food = foodCatered.CaterFood();
                     int x11ffset = 89;
                     int y11ffset = 2;
